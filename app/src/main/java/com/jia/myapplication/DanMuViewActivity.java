@@ -25,6 +25,7 @@ import android.widget.Toast;
 
 import com.jia.jsplayer.danmu.DanmuModel;
 import com.jia.jsplayer.danmu.DanmuView;
+import java.security.SecureRandom;
 
 import java.util.Random;
 
@@ -64,7 +65,7 @@ public class DanMuViewActivity extends Activity implements View.OnClickListener 
 
     public int COLOR[] = {Color.BLUE, Color.WHITE, Color.YELLOW, Color.RED};
 
-    private Random random = new Random();
+    private Random random = new SecureRandom();
 
     private Handler handler = new Handler() {
         @Override
