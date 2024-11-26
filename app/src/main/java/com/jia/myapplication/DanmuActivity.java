@@ -17,6 +17,7 @@ import com.jia.jsplayer.danmu.DanmuView;
 import com.jia.jsplayer.listener.OnVideoControlListener;
 import com.jia.jsplayer.utils.DisplayUtils;
 import com.jia.jsplayer.video.JsPlayer;
+import java.security.SecureRandom;
 
 import java.util.Random;
 
@@ -62,7 +63,7 @@ public class DanmuActivity extends AppCompatActivity {
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
 
         setContentView(R.layout.activity_danmu);
-        random = new Random();
+        random = new SecureRandom();
 
         jsplayer_danmu = (JsPlayer) findViewById(R.id.jsplayer_danmu);
         bt_add_danmu = (Button) findViewById(R.id.bt_add_danmu);
